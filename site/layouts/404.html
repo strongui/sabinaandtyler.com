@@ -1,0 +1,21 @@
+{{ partial "navless_head.html" . }}
+
+<section class="details details-4 fullscreen overlay-primary">
+	<div class="background-image-holder">
+		<img alt="Background image" class="background-image" src="/img/frog.jpg">
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<div class="feature">
+					{{ range where .Data.Pages "Title" "404" }}
+				   		{{ .Content }}
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ partial "default_foot.html" . }}
