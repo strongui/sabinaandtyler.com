@@ -1,0 +1,11 @@
+baseurl = "http://sabinaandtyler.com/"
+languageCode = "en-us"
+title = "Sabina & Tyler"
+
+[Params]
+  
+  NavTitleHome     = "Home"
+  NavTitleWedding  = "Wedding"
+  NavTitleTravel   = "Travel"
+  NavTitleStory    = "Story"
+  NavTitleRegistry = "Registry"

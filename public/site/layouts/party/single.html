@@ -1,0 +1,87 @@
+{{ partial "navless_head.html" . }}
+ 
+<section class="details details-3 overlay-primary">
+	<div class="background-image-holder">
+		<img alt="Background image" class="background-image" src="/img/frog.jpg">
+	</div>
+</section>
+
+<section class="rsvp rsvp-2">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				{{ .Content }}
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<div class="form-wrapper">
+
+					<form class="form-email">
+						<div class="form-section">
+							<input type="text" name="name" class="validate-required" placeholder="Your Name / Names">
+							<div class="radio-group">
+								<div class="radio-holder naked checked">
+									<span>Attending</span>
+									<input type="radio" name="rsvp" value="attending" checked="checked">
+								</div>
+								<div class="radio-holder naked">
+									<span>Not Attending</span>
+									<input type="radio" name="rsvp" value="not-attending">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-section">
+							<h6>Number of guests</h6>
+							<div class="radio-group">
+								<div class="radio-holder naked checked">
+									<span>One</span>
+									<input type="radio" name="guests" value="1" checked="checked">
+								</div>
+								<div class="radio-holder naked">
+									<span>Two</span>
+									<input type="radio" name="guests" value="2">
+								</div>
+								<div class="radio-holder naked">
+									<span>Three</span>
+									<input type="radio" name="guests" value="3">
+								</div>
+								<div class="radio-holder naked">
+									<span>Four</span>
+									<input type="radio" name="guests" value="4">
+								</div>
+							</div>
+						</div>
+						<div class="form-section">
+							<input type="text" name="event" hidden="true" placeholder="event" value="ReceptionOnly">
+							<input type="text" name="song" placeholder="Additional comments?">
+						</div>
+
+						<input type="submit" value="Send RSVP">
+						<div class="form-error">
+							<span>An error occurred. Try again later!</span>
+						</div>
+						<div class="form-success">
+							<span>Thanks for your RSVP!</span>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<p></p>
+				<a href="/">&lt;&lt; Back</a>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+{{ partial "default_foot.html" . }}

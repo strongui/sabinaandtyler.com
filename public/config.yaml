@@ -1,0 +1,11 @@
+---
+contentdir: "site/sitecontent"
+layoutdir: "site/layouts"
+publishdir: "site"
+indexes:
+  category: "categories"
+baseurl: "http://strongui.github.io/sabinaandtyler.com"
+title: "Hugo Blog Template for GitHub Pages"
+canonifyurls: true
+theme: "Default"
+...
