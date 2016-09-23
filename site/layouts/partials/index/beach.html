@@ -1,0 +1,15 @@
+<section class="details details-2 overlay">
+	<div class="background-image-holder">
+		<img alt="Background image" class="background-image" src="/img/beach.jpg">
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				{{ range where .Data.Pages "Title" "Beach" }}
+				    {{ .Content }}
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>

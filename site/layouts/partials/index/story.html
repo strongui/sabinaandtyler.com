@@ -1,0 +1,20 @@
+<a id="story" class="in-page-link"></a>
+<section class="story story-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<img alt="Photo" src="/img/cookies.jpg">
+				<img alt="Photo" src="/img/engagement.png">
+				<img alt="Photo" src="/img/couch.jpg">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+				{{ range where .Data.Pages "Title" "Story" }}
+				    {{ .Content }}
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
